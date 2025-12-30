@@ -1,12 +1,17 @@
+import { AppContextTheme, AppContextThemeNew } from "./AppContext/AppContextTheme";
 import { AppButton } from "./AppLib/Component/Button/Button";
 import { AppLayout } from "./AppLib/Component/Layout/Layout";
 
 function App() {
-  const child = AppButton();
+  /*setup providers start */
+  AppContextThemeNew('dark');
+  /*setup providers end */
+
+  const child = <AppButton />;
   return (
-    <>
-      <AppLayout children={child}/>
-    </>
+    <AppContextTheme>
+      <AppLayout children={child} />
+    </AppContextTheme>
   );
 }
 
