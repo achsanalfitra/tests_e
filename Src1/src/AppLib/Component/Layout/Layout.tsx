@@ -12,7 +12,6 @@ export function AppLayout({ children }: AppLayoutProps) {
     <div className="app-layout" style={{ 
       backgroundColor: theme.backgroundColor, 
       color: theme.color,
-      minHeight: '100vh' 
     }}>
       <main>
         {children}

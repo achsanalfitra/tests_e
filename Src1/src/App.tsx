@@ -4,7 +4,7 @@ import { AppLayout } from "./AppLib/Component/Layout/Layout";
 
 function App() {
   /*setup providers start */
-  AppContextThemeNew('dark');
+  AppContextThemeNew('light');
   /*setup providers end */
 
   const child = <AppButton />;

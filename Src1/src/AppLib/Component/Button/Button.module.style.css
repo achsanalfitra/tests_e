@@ -1,0 +1,26 @@
+.app-button {
+  width: 340px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14;
+
+  background-color: var(--app-button-background-color);
+}
+
+.app-button:hover {
+  background-color: var(--app-button-background-color-hover);
+}
+
+.app-button:active {
+  background-color: var(--app-button-background-color);
+}
