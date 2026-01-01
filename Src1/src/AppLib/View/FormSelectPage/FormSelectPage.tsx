@@ -47,6 +47,7 @@ export function AppViewFormSelectPage() {
                     label="All pages"
                 />
             </div>
+            <div className='app-view-form-divider' />
             <div className='app-view-form-select-page-options-list'>
                 {PAGE_OPTIONS.map((item, idx) => (
                     <div
@@ -60,6 +61,7 @@ export function AppViewFormSelectPage() {
                     </div>
                 ))}
             </div>
+            <div className='app-view-form-divider' />
             <div className='app-view-form-select-page-button'>
                 <AppButton />
             </div>

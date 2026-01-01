@@ -44,5 +44,25 @@
     display: none;
 }
 
-/* left empty on purpose; already has internal sizing */
-.app-view-form-select-page-button {}
+.app-view-form-select-page-button {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-view-form-divider {
+    height: 20px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-view-form-divider::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.7px;
+    background: #CDCDCD;
+}
