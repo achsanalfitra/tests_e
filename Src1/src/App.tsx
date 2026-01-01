@@ -1,5 +1,6 @@
 import { AppContextTheme, AppContextThemeNew } from "./AppContext/AppContextTheme";
 import { AppButton } from "./AppLib/Component/Button/Button";
+import { AppCheckbox } from "./AppLib/Component/Checkox/Checkbox";
 import { AppLayout } from "./AppLib/Component/Layout/Layout";
 
 function App() {
@@ -7,10 +8,11 @@ function App() {
   AppContextThemeNew('light');
   /*setup providers end */
 
-  const child = <AppButton />;
+  const scaffoldButton = <AppButton />;
+  const scaffoldCheckbox = <AppCheckbox />;
   return (
     <AppContextTheme>
-      <AppLayout children={child} />
+      <AppLayout children={scaffoldCheckbox} />
     </AppContextTheme>
   );
 }

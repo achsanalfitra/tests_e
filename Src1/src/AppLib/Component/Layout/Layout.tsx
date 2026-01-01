@@ -8,9 +8,9 @@ interface AppLayoutProps {
 
 export function AppLayout({ children }: AppLayoutProps) {
   const theme = useContext(AppContextThemeComponent);
- return (
-    <div className="app-layout" style={{ 
-      backgroundColor: theme.backgroundColor, 
+  return (
+    <div className="app-layout" style={{
+      backgroundColor: theme.backgroundColor,
       color: theme.color,
     }}>
       <main>
