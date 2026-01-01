@@ -1,7 +1,6 @@
 .app-checkbox {
   width: 25px;
   height: 25px;
-  --checkbox-checkmark-size: 7px;
 
   border-radius: 6px;
   border:  var(--app-checkbox-border);

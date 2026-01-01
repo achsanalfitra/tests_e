@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AppCheckbox } from '../Checkox/Checkbox';
+import { AppCheckbox } from '../Checkbox/Checkbox';
 import './ItemSelectPage.module.style.css';
 
 interface AppItemSelectPageProps {

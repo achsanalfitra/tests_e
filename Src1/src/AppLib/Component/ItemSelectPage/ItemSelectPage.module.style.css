@@ -8,7 +8,9 @@
     font-size: 14px;
     line-height: 130%;
 
-    box-sizing: content-box;
+    box-sizing: border-box;
+    
+    cursor: pointer;
 
     background-color: white;
     color: #1F2128;
