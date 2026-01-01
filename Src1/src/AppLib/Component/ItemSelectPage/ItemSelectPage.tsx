@@ -14,10 +14,13 @@ export function AppItemSelectPage({ checked = false, label = 'All pages' }: AppI
 
     return (
         <div className='app-item-select-page'
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            onMouseDown={() => setIsPressed(true)}
-            onMouseUp={() => setIsPressed(false)}
+            onPointerEnter={() => setIsHovered(true)}
+            onPointerLeave={() => {
+                setIsHovered(false);
+                setIsPressed(false);
+            }}
+            onPointerDown={() => setIsPressed(true)}
+            onPointerUp={() => setIsPressed(false)}
         >
             <span className='app-item-select-page-label'>{label}</span>
             <div>

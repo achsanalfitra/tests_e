@@ -67,10 +67,13 @@ export function AppCheckbox({ checked = false, hoverFromParent, pressedFromParen
         <div
             className="app-checkbox"
             style={style}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            onMouseDown={() => setIsPressed(true)}
-            onMouseUp={() => setIsPressed(false)}
+            onPointerEnter={() => setIsHovered(true)}
+            onPointerLeave={() => {
+                setIsHovered(false);
+                setIsPressed(false);
+            }}
+            onPointerDown={() => setIsPressed(true)}
+            onPointerUp={() => setIsPressed(false)}
         >
             <svg
                 width={checkmarkWidth}
