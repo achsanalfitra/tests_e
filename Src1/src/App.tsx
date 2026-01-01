@@ -1,6 +1,7 @@
 import { AppContextTheme, AppContextThemeNew } from "./AppContext/AppContextTheme";
 import { AppButton } from "./AppLib/Component/Button/Button";
 import { AppCheckbox } from "./AppLib/Component/Checkox/Checkbox";
+import { AppItemSelectPage } from "./AppLib/Component/ItemSelectPage/ItemSelectPage";
 import { AppLayout } from "./AppLib/Component/Layout/Layout";
 
 function App() {
@@ -10,9 +11,11 @@ function App() {
 
   const scaffoldButton = <AppButton />;
   const scaffoldCheckbox = <AppCheckbox />;
+  const scaffoldItemSelectPage = <AppItemSelectPage />;
+
   return (
     <AppContextTheme>
-      <AppLayout children={scaffoldCheckbox} />
+      <AppLayout children={scaffoldItemSelectPage} />
     </AppContextTheme>
   );
 }

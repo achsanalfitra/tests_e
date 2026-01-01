@@ -1,0 +1,28 @@
+import { useState } from 'react';
+import { AppCheckbox } from '../Checkox/Checkbox';
+import './ItemSelectPage.module.style.css';
+
+interface AppItemSelectPageProps {
+    checked?: boolean;
+    label?: string;
+}
+
+export function AppItemSelectPage({ checked = false, label = 'All pages' }: AppItemSelectPageProps) {
+
+    const [stateHover, setIsHovered] = useState(false);
+    const [statePressed, setIsPressed] = useState(false);
+
+    return (
+        <div className='app-item-select-page'
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            onMouseDown={() => setIsPressed(true)}
+            onMouseUp={() => setIsPressed(false)}
+        >
+            <span className='app-item-select-page-label'>{label}</span>
+            <div>
+                <AppCheckbox checked={checked} hoverFromParent={stateHover} pressedFromParent={statePressed} />
+            </div>
+        </div>
+    );
+}

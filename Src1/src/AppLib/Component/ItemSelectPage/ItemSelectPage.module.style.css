@@ -1,0 +1,15 @@
+.app-item-select-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 370px;
+    height: 42px;
+    padding: 8px 15px 8px 22px;
+    font-size: 14px;
+    line-height: 130%;
+
+    box-sizing: content-box;
+
+    background-color: white;
+    color: #1F2128;
+}
